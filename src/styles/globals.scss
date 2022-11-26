@@ -1,10 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: 'Vampire Wars';
   src: local('Lato'), url(./../fonts/Vampire-Wars.ttf) format('opentype');
+  font-display: swap;
 }
 @font-face {
   font-family: 'Gotham';
   src: local('Lato'), url(./../fonts/Gotham-Book-Font.otf) format('opentype');
+  font-display: swap;
 }
 html,
 body {
@@ -31,4 +37,18 @@ h1.light{
   font-family: "Vampire Wars", sans-serif;
   font-size: 65px;
   color: white;
+}
+.primary-button{
+  color: white;
+  background-color: #021122;
+  clip-path: polygon(24px 0%, 100% 0%, calc(100% - 24px) 100%, 0% 100%);
+  min-width: 300px;
+  min-height: 75px;
+  text-transform: initial;
+}
+.nft-holder{
+  background-color: white;
+  padding: 7%;
+
+
 }

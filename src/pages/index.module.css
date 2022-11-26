@@ -1,48 +1,78 @@
 .main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background-image: url('/main-background.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image:
+            url('/841.svg'),
+            url('/809.svg'),
+            url('/5307.svg'),
+            url('/803.svg'),
+            url('/797.svg'),
+            url('/853.svg'),
+            url('/profesional-sports-background.png'),
+    url('/766.svg'),
+    url('/profesional-sports-text-background.png'),
+    url('/winter-sports-background.png'),
+    url('/main-background.png');
+    background-position:
+            center top 4650px,
+            left -193px top 4289px,
+            left -500px top 3800px,
+            center top 3580px,
+            center top 3280px,
+            center top 3260px,
+            right -142px top 2597px,
+    right -1756px top 2430px,
+    center top 2200px,
+    center top 923px,
+    center top;
+    background-repeat: no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat;
+    background-color: #021122;
 }
 
 .container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
-  padding: 4rem 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 4rem 1rem;
 }
 
 @media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
+    .container {
+        max-width: 640px;
+    }
 }
 
 @media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
+    .container {
+        max-width: 768px;
+    }
 }
 
 @media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
+    .container {
+        max-width: 1024px;
+    }
 }
 
 @media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
+    .container {
+        max-width: 1280px;
+    }
 }
 
 @media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
+    .container {
+        max-width: 1536px;
+    }
 }
+
