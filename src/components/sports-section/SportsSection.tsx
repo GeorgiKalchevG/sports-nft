@@ -1,6 +1,7 @@
-import React, { FC } from 'react';
+import React from 'react';
+import type { FC } from 'react';
 import NftExample from "../NFTExample/NFTExample"
-import { StaticImageData } from "next/image"
+import type { StaticImageData } from "next/image"
 
 const SportsSection: FC<{ width: number, title: string, sources: StaticImageData[] }> = ({sources, title, width}) => {
   return (

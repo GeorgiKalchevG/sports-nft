@@ -15,6 +15,9 @@ import nft10 from '../../public/10.png'
 import nft11 from '../../public/11.png'
 import Link from "next/link"
 import SportsSection from "../components/sports-section/SportsSection"
+import Image from "next/image"
+import mainBackground from '../../public/main-background.png'
+import winterSportsBackground from '../../public/winter-sports-background.png'
 
 const Home: NextPage = () => {
   return (
@@ -25,18 +28,30 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+
         <div className={styles.container}>
-          <div className={'columns-2'}>
-            <div className='col'>
-              <h1>THE MONSTERS ARE BACK IN TOWN</h1>
-              <p className={'text-2xl pt-10 pb-28 pr-72'}>Buy and sell NFTs from our top graphic designers</p>
-              <Link href={'/mint'}>
-                <button className={'primary-button'}>MINT NFT</button>
-              </Link>
+          <div className={'main-content'}>
+            <Image src={mainBackground} alt='main-background'
+                   style={{position: 'absolute', width: '100vw', zIndex: '-1', top: 0, left: 0}} />
+            <div className={'columns-2 z-10'}>
+              <div className='col'>
+                <h1>THE MONSTERS ARE BACK IN TOWN</h1>
+                <p className={'text-2xl pt-10 pb-28 pr-72'}>Buy and sell NFTs from our top graphic designers</p>
+                <Link href={'/mint'}>
+                  <button className={'primary-button'}>MINT NFT</button>
+                </Link>
+              </div>
+              <div><NftExample width={600} source={nft2} /></div>
             </div>
-            <div><NftExample width={600} source={nft2} /></div>
           </div>
-          <SportsSection sources={[nft1, nft3, nft4]} width={600} title='Winter Sports' />
+          <div className='main-content pt-96'>
+            <Image src={winterSportsBackground} alt=''
+                   placeholder='blur'
+                   style={{position: 'absolute', width: '100vw', zIndex: '-1', top: '920px', left: 0}} />
+            {/*<Image src={} alt=''/>*/}
+            <SportsSection sources={[nft1, nft3, nft4]} width={600} title='Winter Sports' />
+          </div>
+
           <SportsSection sources={[nft11, nft9, nft10,]} width={600} title='Professional sports' />
           <SportsSection sources={[nft6, nft5, nft8,]} width={600} title='Water sports' />
           <SportsSection sources={[nft7]} width={400} title='' />
