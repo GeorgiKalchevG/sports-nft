@@ -17,6 +17,9 @@ body {
   padding: 0;
   margin: 0;
   font-family: Gotham, sans-serif;
+  width: 100vw;
+  overflow-x:hidden ;
+  text-transform: uppercase;
 }
 
 a {
@@ -32,20 +35,14 @@ h1{
   font-family: "Vampire Wars", sans-serif;
   font-size: 65px;
   color: black;
+  line-height: 5rem;
 }
 h1.light{
   font-family: "Vampire Wars", sans-serif;
   font-size: 65px;
   color: white;
 }
-.primary-button{
-  color: white;
-  background-color: #021122;
-  clip-path: polygon(24px 0%, 100% 0%, calc(100% - 24px) 100%, 0% 100%);
-  min-width: 300px;
-  min-height: 75px;
-  text-transform: initial;
-}
+
 .nft-holder{
   background-color: white;
   padding: 7%;

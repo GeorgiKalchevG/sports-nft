@@ -1,0 +1,29 @@
+.button{
+  width: 300px;
+  height: 75px;
+  transform: skew(-16deg);
+  color: white;
+
+  &.primary{
+    &:hover{
+      background-color: #094069;
+    }
+    background-color: #021122;
+  }
+  &.secondary{
+    border: 5px solid #FFFFFF;
+    &:hover{
+      background-color: #FFFFFF;
+      color: #094069;
+    }
+  }
+  span{
+    text-transform: uppercase;
+    display: block;
+    transform: skew(16deg);
+  }
+  &.small{
+    width: 200px;
+    height: 50px;
+  }
+}
